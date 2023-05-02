@@ -11,6 +11,9 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          'deskhome': "url('/images/background-home-desktop.jpg')",
+          'tablethome': "url('/images/background-home-tablet.jpg')",
+          'mobilehome': "url('/images/background-home-mobile.jpg')",
       },
     },
   },
