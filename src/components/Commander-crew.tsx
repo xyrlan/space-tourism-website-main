@@ -16,7 +16,7 @@ export default function Commander() {
             </div>
 
             
-            <Image className="select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500" src="/images/image-douglas-hurley.png" width={400} height={400} alt="douglas hurley" />
+            <Image className="select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500" src="/images/image-douglas-hurley.png" width={420} height={400} alt="douglas hurley" />
         </div>
     )
 }

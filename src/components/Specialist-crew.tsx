@@ -16,7 +16,7 @@ export default function Specialist() {
             </div>
 
             
-            <Image className="select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500" src="/images/image-mark-shuttleworth.png" width={400} height={400} alt="Mark Shuttle" />
+            <Image className="select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500" src="/images/image-mark-shuttleworth.png" width={380} height={400} alt="Mark Shuttle" />
         </div>
     )
 }
