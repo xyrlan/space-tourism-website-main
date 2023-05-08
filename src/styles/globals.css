@@ -1,6 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100;200;300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+
+
+.mainbg {
+  content: '';
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.708) 3%, rgba(0, 0, 0, 0.347) 49%, rgba(0, 0, 0, 0.703) 97%);
+  
+  
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
