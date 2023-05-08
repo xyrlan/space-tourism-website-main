@@ -56,11 +56,11 @@ export default function Navbar() {
         <>
         <nav className="text-lg flex justify-between pt-10 fixed z-20 w-screen select-none">
             <Image className="mx-10 py-6" src="/images/logo.svg" width={48} height={48} alt="Logo" />
-            <div className="border border-solid border-gray-700 w-[33%] h-0 place-self-center absolute left-[10%] " />
+            <div className="border border-solid border-gray-700 w-[33%] h-0 place-self-center absolute left-[10%] max-xl:w-[28%] max-lg:w-[24%] " />
 
 
 
-            <div className="bg-gray-500 flex items-center w-[60%] h-24 bg-opacity-30 justify-between max-lg:px-10 px-20 max-lg:pr-30 pr-44">
+            <div className="bg-gray-500 flex items-center 2xl:w-[50%] md:w-[70%] lg:w-[65%] xl:w-[60%] h-24 bg-opacity-30 justify-between max-lg:px-10 px-20 max-lg:pr-30 pr-44">
                 <div className={` text-[#a19797] hover:text-white  duration-500 h-full flex items-center hover:border-[#a19797] hover:border-b-2 ${selectedButton === "home" ? 'hover:border-white border-white border-solid border-b-2 border-opacity-100 text-white' : 'border-white border-solid border-b-2 border-opacity-0 '}`} 
                 onClick={() => {
                     document.getElementById("home")?.scrollIntoView()
