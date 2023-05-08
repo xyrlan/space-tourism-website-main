@@ -8,7 +8,7 @@ export default function Europa() {
 let [isSelected, setSelected] = useState(false);
 
     return(
-        <div className=" selection:bg-gray-500 selection:bg-opacity-30 relative flex w-full justify-center xl:gap-[15%] lg:gap-[10%] md:gap-[5%]">
+        <div className="transition-all duration-500 relative flex w-full justify-center xl:gap-[15%] lg:gap-[10%] md:gap-[5%]">
         <Image className=" select-none hover:scale-105 duration-700 ease-out" src="/images/image-europa.png" width={380} height={380} alt="europa"  />
         <div className="flex-col w-[30%]">
             <h4 className="text-9xl my-[4%]" >Europa</h4>

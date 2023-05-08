@@ -31,7 +31,7 @@ export default function Crew() {
     return (
         
         <>
-        <section id="crew" className="font-genos md:bg-deskcrew max-sm:bg-mobilecrew sm:bg-tabletcrew h-screen flex flex-col justify-end bg-cover relative section">
+        <section id="crew" className="selection:bg-gray-500 selection:bg-opacity-30 font-genos md:bg-deskcrew max-sm:bg-mobilecrew sm:bg-tabletcrew h-screen flex flex-col justify-end bg-cover relative section">
             <h1 className="text-4xl w-fit ml-[13%] absolute top-[20%] "><span className="text-[#a19797]">02</span> Meet your crew</h1>
             <CSSTransition
                     in={inProp} // renderiza o componente atual

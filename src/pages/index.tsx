@@ -6,7 +6,8 @@ import Link from 'next/link'
 
 import { useState } from 'react'
 import Destination from './destination'
-import { mainModule } from 'process'
+import Crew from './crew'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,10 +22,10 @@ export default function Home() {
       <link rel="icon" type="image/svg" sizes="32x32" href="/images/logo.svg"></link>
     </Head>
     
-    <section id='home' className="font-genos md:bg-deskhome max-sm:bg-mobilehome sm:bg-tablethome h-screen bg-cover relative section mainbg">
+    <section id='home' className="selection:bg-gray-500 selection:bg-opacity-30 font-genos md:bg-deskhome max-sm:bg-mobilehome sm:bg-tablethome h-screen bg-cover relative section mainbg">
 
       <Navbar/>
-      <div className='flex flex-col w-[30%] absolute bottom-10 left-[10%] gap-6 ' >
+      <div className='flex flex-col w-[30%] absolute bottom-[10%] left-[10%] gap-6 ' >
         <h1 className='text-4xl'>So, you want to travel to</h1>
         <h6 className='text-9xl text-end'>SPACE</h6>
         <p className='mt-6 text-justify'>
@@ -35,7 +36,7 @@ export default function Home() {
       <div onClick={() => {
                     document.getElementById("destination")?.scrollIntoView()
                 }}>
-      <div className='cursor-pointer select-none h-60 w-60 right-[15%] bottom-10 rounded-full bg-white absolute flex justify-center items-center hover:scale-105 duration-500'>
+      <div className='cursor-pointer select-none h-60 w-60 right-[15%] bottom-[10%] rounded-full bg-white absolute flex justify-center items-center hover:scale-105 duration-500'>
         <h4 className='text-black text-5xl'>Explore</h4>
       </div>
       </div>
@@ -43,7 +44,7 @@ export default function Home() {
     </section>
     
     <Destination />
-    
+    <Crew />
     </>
   )
 }
