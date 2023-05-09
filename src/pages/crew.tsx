@@ -38,7 +38,7 @@ export default function Crew() {
                     timeout={500} // tempo em milissegundos da duração da animação
                     classNames="fade" // classes CSS da animação
             >{MultiStepComponents[currentStep]}</CSSTransition>
-            <ul className="flex justify-between w-[8%] absolute bottom-[10%] left-[10%]">
+            <ul className="flex justify-between w-[8%] max-w-[150px] absolute bottom-[10%] left-[10%] max-lg:bottom-[5%]">
                 <button   
                 onClick={() => {handleStepClick(0);
                     setSelectedButton("Commander");
@@ -46,9 +46,8 @@ export default function Crew() {
                     setTimeout(() => {
                         setInProp(false);
                     }, 500);
- 
                 }}
-            className={` ${selectedButton === "Commander" ? 'bg-white h-3 w-3 scale-105 rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
+            className={` duration-500 ${selectedButton === "Commander" ? 'bg-white scale-95 h-3 w-3  rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
                 <button 
                 onClick={() => {handleStepClick(1);
                     setSelectedButton("Specialist");
@@ -58,7 +57,7 @@ export default function Crew() {
                     }, 500);
                     
                 }}
-                className={`${selectedButton === "Specialist" ? 'bg-white h-3 w-3 scale-105 rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
+                className={`duration-500 ${selectedButton === "Specialist" ? 'bg-white scale-95 h-3 w-3  rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
                 <button 
                 onClick={() => {handleStepClick(2);
                     setSelectedButton("Pilot");
@@ -68,7 +67,7 @@ export default function Crew() {
                     }, 500);
                     
                 }}
-                className={`${selectedButton === "Pilot" ? 'bg-white h-3 w-3 scale-105 rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
+                className={`duration-500 ${selectedButton === "Pilot" ? 'bg-white scale-95 h-3 w-3  rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
                 <button 
                 onClick={() => {handleStepClick(3);
                     setSelectedButton("Engineer");
@@ -78,7 +77,7 @@ export default function Crew() {
                     }, 500);
                     
                 }}
-                className={` ${selectedButton === "Engineer" ? 'bg-white h-3 w-3 scale-105 rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
+                className={` duration-500 ${selectedButton === "Engineer" ? 'bg-white scale-95 h-3 w-3  rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
             </ul>
 
         </section>
