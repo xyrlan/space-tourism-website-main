@@ -27,7 +27,7 @@ export default function Home() {
       <div className='mainbg' />
 
 
-      <div className='flex max-md:flex-col justify-between px-[15%] pb-[5%] items-center z-20'>
+      <div className='flex max-md:flex-col justify-between px-[15%] max-md:px-[5%] pb-[5%] items-center z-20'>
         <div className='flex flex-col md:w-[40%] max-md:w-full max-md:items-center gap-6 max-md:gap-2 '>
           <h1 className='text-4xl'>So, you want to travel to</h1>
           <h6 className='text-9xl md:text-end'>SPACE</h6>
