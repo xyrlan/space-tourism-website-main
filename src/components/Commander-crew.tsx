@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Commander() {
     return (
-        <div className="flex items-center px-[10%] gap-[10%]">
+        <div className="flex items-center px-[10%] gap-[10%] max-lg:gap-[3%] max-lg:px-[3%]">
             
             <div className="w-[40%]">            
                 <h1 className="text-[#a19797] text-4xl">Commander</h1>
@@ -16,7 +16,7 @@ export default function Commander() {
             </div>
 
             
-            <Image className="select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500" src="/images/image-douglas-hurley.png" width={420} height={400} alt="douglas hurley" />
+            <Image className="max-xl:scale-90 max-lg:w-[400px] select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500" src="/images/image-douglas-hurley.png" width={420} height={400} alt="douglas hurley" />
         </div>
     )
 }

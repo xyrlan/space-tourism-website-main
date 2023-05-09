@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Specialist() {
     return (
-        <div className="flex items-center px-[10%] gap-[10%]">
+        <div className="flex items-center px-[10%] gap-[10%] max-lg:gap-[3%] max-lg:px-[3%]">
             
             <div className="w-[40%]">            
                 <h1 className="text-[#a19797] text-4xl">Mission Specialist</h1>
