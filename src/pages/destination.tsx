@@ -45,7 +45,7 @@ export default function Destination() {
                 setInProp(true);
                 setTimeout(() => {
                     setInProp(false);
-                }, 500);
+                }, 200);
                 }} 
                 className={` hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${selectedButton === "Moon" ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
                 <button>Moon</button>
@@ -56,7 +56,7 @@ export default function Destination() {
                 setInProp(true);
                 setTimeout(() => {
                     setInProp(false);
-                }, 500);
+                }, 200);
                 }} 
                 className={`hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${selectedButton === "Mars" ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
                 <button>Mars</button>
@@ -67,7 +67,7 @@ export default function Destination() {
                 setInProp(true);
                 setTimeout(() => {
                     setInProp(false);
-                }, 500);
+                }, 200);
                 }} 
                 className={`hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${selectedButton === "Europa" ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
                 <button>Europa</button>
@@ -78,7 +78,7 @@ export default function Destination() {
                 setInProp(true);
                 setTimeout(() => {
                     setInProp(false);
-                }, 500);
+                }, 200  );
                 }} 
                 className={`hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${selectedButton === "Titan" ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
             <button >Titan</button>

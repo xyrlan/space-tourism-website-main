@@ -12,7 +12,7 @@ import { useState } from "react";
     console.log(currentStep);
 
     const handleStepClick = (step: number) => {
-        setCurrentStep(step);
+            setCurrentStep(step);
     };
 
     return {

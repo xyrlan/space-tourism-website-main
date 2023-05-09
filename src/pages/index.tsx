@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import Destination from './destination'
 import Crew from './crew'
+import Technology from './technology'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,7 +23,7 @@ export default function Home() {
       <link rel="icon" type="image/svg" sizes="32x32" href="/images/logo.svg"></link>
     </Head>
     
-    <section id='home' className="selection:bg-gray-500 selection:bg-opacity-30 font-genos md:bg-deskhome max-sm:bg-mobilehome sm:bg-tablethome h-screen bg-cover relative section mainbg">
+    <section id='home' className="selection:bg-gray-500 selection:bg-opacity-30 font-genos md:bg-deskhome max-sm:bg-mobilehome sm:bg-tablethome h-screen bg-cover relative section">
 
       <Navbar/>
       <div className='flex flex-col w-[30%] absolute bottom-[10%] left-[10%] gap-6 ' >
@@ -45,6 +46,7 @@ export default function Home() {
     
     <Destination />
     <Crew />
+    <Technology />
     </>
   )
 }
