@@ -85,7 +85,7 @@ export default function Navbar() {
                 </div>
                 <div className={`text-[#a19797] hover:text-white  duration-500 h-full flex items-center hover:border-[#a19797] hover:border-b-2 ${selectedButton === "technology" ? 'hover:border-white border-white border-solid border-b-2 border-opacity-100 text-white' : 'border-white border-solid border-b-2 border-opacity-0 '}`} 
                 onClick={() => {
-                    document.getElementById("technology")?.scrollIntoView
+                    document.getElementById("technology")?.scrollIntoView()
                 }}>
                     <div className="">
                         <p className=""> <span className="text-[#a19797]">03</span> <span className="   ">TECHNOLOGY</span></p>
