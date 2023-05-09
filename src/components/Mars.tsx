@@ -14,17 +14,17 @@ export default function Mars() {
         <Image className="max-lg:scale-90 select-none hover:scale-105 duration-700 ease-out" src="/images/image-mars.png" width={380} height={380} alt="mars"  />
         <div className="flex-col w-[30%]">
             <h4 className="text-9xl my-[4%]" >Mars</h4>
-            <p className="border-gray-700 border-solid border-b h-[35%]">  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+            <p className="border-gray-700 border-solid border-b h-[35%] max-lg:h-[40%]">  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
   the tallest planetary mountain in our solar system. It’s two and a half times 
   the size of Everest!</p>
             <div className="flex justify-between "> 
-                <div className="flex flex-col mt-[3%]">
+                <div className="flex flex-col mt-[3%] max-lg:scale-90">
                     <a className="text-xl">Avg. distance</a>
-                    <a className="text-4xl"> 225 mil. km</a>  
+                    <a className="text-4xl max-lg:text-2xl"> 225 mil. km</a>  
                 </div>
-                <div className="flex flex-col mt-[3%]">
+                <div className="flex flex-col mt-[3%] text-end max-lg:scale-90">
                     <a className="text-xl">Est. travel time</a>
-                    <a className="text-4xl">9 months</a>
+                    <a className="text-4xl max-lg:text-2xl">9 months</a>
                 </div>
             </div>
         </div>

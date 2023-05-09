@@ -24,8 +24,10 @@ export default function Home() {
     </Head>
     
     <section id='home' className="selection:bg-gray-500 selection:bg-opacity-30 font-genos md:bg-deskhome max-sm:bg-mobilehome sm:bg-tablethome h-screen bg-cover relative section">
+      
 
       <Navbar/>
+      <div className='w-full h-full z-10 mainbg' />
       <div className='flex flex-col w-[30%] absolute bottom-[10%] left-[10%] gap-6 ' >
         <h1 className='text-4xl'>So, you want to travel to</h1>
         <h6 className='text-9xl text-end'>SPACE</h6>

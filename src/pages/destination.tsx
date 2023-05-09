@@ -33,11 +33,11 @@ export default function Destination() {
 
     return(
         <>
-        <section id="destination" className="selection:bg-gray-500 selection:bg-opacity-30 font-genos md:bg-deskdestination max-sm:bg-mobiledestination sm:bg-tabletdestination h-screen flex flex-col justify-end pb-10 bg-cover relative section">
-            
+        <section id="destination" className="selection:bg-gray-500 selection:bg-opacity-30 font-genos md:bg-deskdestination max-sm:bg-mobiledestination sm:bg-tabletdestination h-screen flex flex-col justify-end pb-10 bg-cover relative section ">       <div className=' mainbg' />
+        
                 <h1 className="text-4xl w-fit ml-[13%] mb-[5%] absolute top-[20%]"><span className="text-[#a19797]">01</span> Pick your destination</h1>
 
-                <div className="text-xl flex justify-end xl:w-[76%] lg:w-[80%] md:w-[90%] space-x-10 select-none">
+                <div className="text-xl flex justify-end xl:w-[76%] lg:w-[80%] md:w-[90%] space-x-10 select-none z-10">
 
                 <div onClick={() => { 
                 handleStepClick(0); 
