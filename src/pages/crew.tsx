@@ -45,7 +45,7 @@ export default function Crew() {
                     setInProp(true);
                     setTimeout(() => {
                         setInProp(false);
-                    }, 500);
+                    }, 200);
                 }}
             className={` duration-500 ${selectedButton === "Commander" ? 'bg-white scale-95 h-3 w-3  rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
                 <button 
@@ -54,7 +54,7 @@ export default function Crew() {
                     setInProp(true);
                     setTimeout(() => {
                         setInProp(false);
-                    }, 500);
+                    }, 200);
                     
                 }}
                 className={`duration-500 ${selectedButton === "Specialist" ? 'bg-white scale-95 h-3 w-3  rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
@@ -64,7 +64,7 @@ export default function Crew() {
                     setInProp(true);
                     setTimeout(() => {
                         setInProp(false);
-                    }, 500);
+                    }, 200);
                     
                 }}
                 className={`duration-500 ${selectedButton === "Pilot" ? 'bg-white scale-95 h-3 w-3  rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
@@ -74,7 +74,7 @@ export default function Crew() {
                     setInProp(true);
                     setTimeout(() => {
                         setInProp(false);
-                    }, 500);
+                    }, 200);
                     
                 }}
                 className={` duration-500 ${selectedButton === "Engineer" ? 'bg-white scale-95 h-3 w-3  rounded-full shadow-lg' : 'h-3 w-3 scale-105 rounded-full bg-[#4e4747] shadow-lg'}`}></button>
