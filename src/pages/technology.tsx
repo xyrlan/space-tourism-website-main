@@ -24,8 +24,9 @@ export default function Technology() {
     const [inProp, setInProp] = useState(false);
 
     return (
+
         <>
-         <section id="technology" className="selection:bg-gray-500 selection:bg-opacity-30 font-genos md:bg-desktech max-sm:bg-mobiletech sm:bg-tablettech h-screen flex flex-col justify-center bg-cover relative section">
+        <section id="technology" className="selection:bg-gray-500 selection:bg-opacity-30 font-genos md:bg-desktech max-sm:bg-mobiletech sm:bg-tablettech h-screen flex flex-col justify-center bg-cover relative section">
             <h1 className="text-4xl w-fit ml-[13%] absolute top-[20%] "><span className="text-[#a19797]">03</span> Space launch 101
             </h1>
             <div className="flex items-center justify-center ml-[10%] pt-28">
@@ -66,8 +67,6 @@ export default function Technology() {
             </div>
 
          </section>
-        
-        
         </>
     )
 }
