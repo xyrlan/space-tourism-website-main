@@ -11,7 +11,7 @@ export default function Mars() {
     
     return(
         <div className={`selection:bg-gray-500 selection:bg-opacity-30 durantion-500 delay-200 transition-all ease-in-out relative flex w-full justify-center xl:gap-[15%] lg:gap-[10%] md:gap-[5%] `}>
-        <Image className="  select-none hover:scale-105 duration-700 ease-out" src="/images/image-mars.png" width={380} height={380} alt="mars"  />
+        <Image className="max-lg:scale-90 select-none hover:scale-105 duration-700 ease-out" src="/images/image-mars.png" width={380} height={380} alt="mars"  />
         <div className="flex-col w-[30%]">
             <h4 className="text-9xl my-[4%]" >Mars</h4>
             <p className="border-gray-700 border-solid border-b h-[35%]">  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 

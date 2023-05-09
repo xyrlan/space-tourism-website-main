@@ -5,13 +5,13 @@ import { useState } from "react";
 
 export default function Europa() {
     
-let [isSelected, setSelected] = useState(false);
+
 
     return(
         <div className="transition-all duration-500 relative flex w-full justify-center xl:gap-[15%] lg:gap-[10%] md:gap-[5%]">
-        <Image className=" select-none hover:scale-105 duration-700 ease-out" src="/images/image-europa.png" width={380} height={380} alt="europa"  />
-        <div className="flex-col w-[30%]">
-            <h4 className="text-9xl my-[4%]" >Europa</h4>
+        <Image className="max-lg:scale-90 select-none hover:scale-105 duration-700 ease-out" src="/images/image-europa.png" width={380} height={380} alt="europa"  />
+        <div className="flex flex-col items-center w-[30%]">
+            <h4 className="text-9xl my-[4%] max-lg:scale-90" >Europa</h4>
             <p className="border-gray-700 border-solid border-b h-[35%]">  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
   winter lover’s dream. With an icy surface, it’s perfect for a bit of 
   ice skating, curling, hockey, or simple relaxation in your snug 
