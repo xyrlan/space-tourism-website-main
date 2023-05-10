@@ -69,8 +69,8 @@ export default function Navbar() {
                 <div className="border border-solid border-gray-700 w-[33%] h-0 place-self-center absolute left-[10%] max-xl:w-[28%] max-lg:w-[24%] max-md:hidden" />
 
 
-                <nav className={`bg-gray-500 flex items-center 2xl:w-[50%] md:w-[70%] lg:w-[65%] xl:w-[60%] sm:h-24 bg-opacity-30 justify-between max-lg:px-10 sm:px-20 max-lg:pr-30 lg:pr-44 max-md:w-[70%]
-                
+                <nav className={`bg-gray-500 flex items-center 2xl:w-[50%] md:w-[70%] lg:w-[65%] xl:w-[60%] sm:h-24 sm:bg-opacity-30  justify-between max-lg:px-10 sm:px-20 max-lg:pr-30 lg:pr-44 max-md:w-[70%]
+                 max-sm:bg-gradient-to-t max-sm:from-black max-sm:to-transparent 
                  max-sm:absolute max-sm:w-full max-sm:py-4 max-sm:space-y-1 max-sm:top-20 max-sm:duration-300 max-sm:transition-all max-sm:ease-in ${!isActive ? 'transition max-sm:block max-sm:left-0' : 'max-sm:top-full max-sm:-left-[100%] max-sm:block '}`}>
 
 
