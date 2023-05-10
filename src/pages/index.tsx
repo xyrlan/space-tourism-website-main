@@ -10,6 +10,7 @@ import Crew from './crew'
 import Technology from './technology'
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <link rel="icon" type="image/svg" sizes="32x32" href="/images/logo.svg"></link>
     </Head>
     <Navbar/>
+    
     <section id='home' className="selection:bg-gray-500 selection:bg-opacity-30 font-genos md:bg-deskhome max-sm:bg-mobilehome sm:bg-tablethome h-screen bg-cover relative section flex p-2 items-end">
       <div className='mainbg' />
 
