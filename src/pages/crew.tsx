@@ -107,7 +107,7 @@ export default function Crew() {
                     </div>
 
 
-                    <ul className="flex justify-between gap-4 max-w-[150px] z-10 max-md:w-full m-10 md:absolute md:bottom-0">
+                    <ul className="flex justify-between gap-4 max-w-[150px] z-30 max-md:w-full m-10 md:absolute md:bottom-0">
                         <button
                             onClick={() => {
                                 handleStepClick(0);
