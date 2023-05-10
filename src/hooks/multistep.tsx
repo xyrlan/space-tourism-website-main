@@ -15,9 +15,21 @@ import { useState } from "react";
             setCurrentStep(step);
     };
 
+    function goForwards() {                                                     
+        if (currentStep === stepLenght - 1) return;
+        setCurrentStep((prev) => prev + 1)
+    }
+    
+    function goBackwards() {
+        if (currentStep === 0) return;
+        setCurrentStep((prev) => prev - 1)
+    }
+
     return {
         currentStep,
         handleStepClick,
+        goBackwards,
+        goForwards,
         
 
     };

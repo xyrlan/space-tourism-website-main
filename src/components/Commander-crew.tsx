@@ -4,7 +4,7 @@ export default function Commander() {
     return (
         <div className="flex items-center px-[10%] gap-[10%] max-lg:gap-[3%] max-lg:px-[3%] z-10 max-md:flex-col ">
 
-            <Image className="z-10 md:hidden select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500 mb-4" src="/images/image-douglas-hurley.png" width={200} height={200} alt="Anousheh Ansari" />
+            <Image className="z-10 md:hidden select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500 mb-4" src="/images/image-douglas-hurley.png" width={220} height={220} alt="Anousheh Ansari" />
 
             <div className="w-[40%] max-md:w-full max-md:text-center">
                 <h1 className="text-[#a19797] text-4xl max-md:text-2xl">Commander</h1>
