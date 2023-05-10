@@ -19,7 +19,7 @@ export default function Pilot() {
             </div>
 
 
-            <Image className="max-md:hidden select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500" src="/images/image-victor-glover.png" width={450} height={450} alt="Victor Glover" />
+            <Image className="max-md:hidden select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500" src="/images/image-victor-glover.png" width={440} height={440} alt="Victor Glover" />
         </div>
     )
 }

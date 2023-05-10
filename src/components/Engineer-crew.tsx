@@ -19,7 +19,7 @@ export default function Engineer() {
             </div>
 
 
-            <Image className="max-md:hidden select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500" src="/images/image-anousheh-ansari.png" width={500} height={500} alt="Anousheh Ansari" />
+            <Image className="max-md:hidden select-none hover:opacity-95 hover:brightness-100 brightness-90 duration-500" src="/images/image-anousheh-ansari.png" width={493} height={493} alt="Anousheh Ansari" />
         </div>
     )
 }

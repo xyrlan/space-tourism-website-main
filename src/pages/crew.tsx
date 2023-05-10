@@ -42,7 +42,7 @@ export default function Crew() {
                         classNames="fade" // classes CSS da animação
                     >{MultiStepComponents[currentStep]}
                     </CSSTransition>
-                    <ul className="flex justify-between gap-4 max-w-[150px] z-10 max-md:w-full m-10">
+                    <ul className="flex justify-between gap-4 max-w-[150px] z-10 max-md:w-full m-10 md:absolute md:bottom-0">
                         <button
                             onClick={() => {
                                 handleStepClick(0);
