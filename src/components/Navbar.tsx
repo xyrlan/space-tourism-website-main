@@ -54,7 +54,7 @@ export default function Navbar() {
 
     return(
         <>
-        <nav className="font-genos text-lg flex justify-between pt-10 fixed z-20 w-screen select-none">
+        <nav className="font-genos text-lg flex justify-between pt-10 fixed z-30 w-screen select-none">
             <Image className="mx-10 py-6" src="/images/logo.svg" width={48} height={48} alt="Logo" />
             <div className="border border-solid border-gray-700 w-[33%] h-0 place-self-center absolute left-[10%] max-xl:w-[28%] max-lg:w-[24%] " />
 
