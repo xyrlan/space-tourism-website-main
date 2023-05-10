@@ -9,7 +9,7 @@ export default function Moon() {
 
 
     return (
-        <div className={`selection:bg-gray-500 selection:bg-opacity-30 relative flex max-md:flex-col w-full h-full justify-center items-center xl:gap-[15%] lg:gap-[10%] md:gap-[5%] px-[2%]`} >
+        <div className={`selection:bg-gray-500 selection:bg-opacity-30 relative flex max-md:flex-col w-full h-full justify-center items-center xl:gap-[15%] lg:gap-[10%] md:gap-[5%] px-[2%] pb-4`} >
 
             <Image className="max-lg:scale-90 select-none md:hover:scale-105 duration-500 max-md:absolute max-md:-top-[350px]  max-md:scale-50 " src="/images/image-moon.png" width={380} height={380} alt="moon" />
             

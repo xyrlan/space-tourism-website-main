@@ -10,7 +10,7 @@ export default function Mars() {
  
     
     return(
-        <div className={`selection:bg-gray-500 selection:bg-opacity-30 relative flex w-full justify-center xl:gap-[15%] lg:gap-[10%] md:gap-[5%] max-md:flex-col px-[2%] items-center h-full`}>
+        <div className={`selection:bg-gray-500 selection:bg-opacity-30 relative flex w-full justify-center xl:gap-[15%] lg:gap-[10%] md:gap-[5%] max-md:flex-col px-[2%] items-center h-full pb-4`}>
         <Image className="max-lg:scale-90 select-none md:hover:scale-105 duration-700 ease-out max-md:absolute max-md:-top-[350px]  max-md:scale-50 " src="/images/image-mars.png" width={380} height={380} alt="mars"  />
         <div className="w-[30%] max-md:w-full max-md:px-5 max-md:text-center">
             <h4 className="text-9xl my-[4%] max-lg:my-[1%] max-md:text-7xl" >Mars</h4>
