@@ -55,7 +55,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="font-genos text-lg flex justify-between sm:pt-10 fixed z-30 w-screen select-none max-sm:py-4 max-sm:shadow-md bg-gradient-to-b from-black to-transparent max-sm:opacity-100  ">
+            <nav className="font-genos text-lg flex justify-between sm:pt-10 fixed z-30 w-screen select-none max-sm:py-4 max-sm:shadow-md bg-gradient-to-b from-black to-transparent max-sm:opacity-100 ">
 
                 <Image className="sm:mx-10 sm:py-6 max-sm:h-fit max-sm:mx-4" src="/images/logo.svg" width={48} height={48} alt="Logo" />
 
