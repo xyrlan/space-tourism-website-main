@@ -16,7 +16,7 @@ import Titan from "@/components/Titan"
 
 export default function Destination() {
 
-    const { currentStep, handleStepClick } = Multistep(3);
+    const { currentStep, handleStepClick, goBackwards, goForwards } = Multistep(4);
 
 
     const [selectedButton, setSelectedButton] = useState("Moon");
@@ -30,6 +30,48 @@ export default function Destination() {
 
 
     const [inProp, setInProp] = useState(false); // para CSSTransition
+
+    const [touchStart, setTouchStart] = useState(0);
+    const [touchEnd, setTouchEnd] = useState(0);
+
+    function handleSwipe(direction:  any) {
+        if (direction === "left" ) {
+            goForwards();
+        } else if (direction === "right") {
+            goBackwards();
+        }
+    }
+
+    function handleStepChange() {
+        setInProp(true);
+        setTimeout(() => {
+            setInProp(false);
+        }, 500);
+    }
+
+
+    function handleTouchStart(e: any) {
+        setTouchStart(e.targetTouches[0].clientX);
+    }
+
+    function handleTouchMove(e: any) {
+        setTouchEnd(e.targetTouches[0].clientX);
+    }
+
+    function handleTouchEnd() {
+        const touchDiff = touchEnd - touchStart;
+        if (touchDiff > 50 && currentStep > 0) {
+            handleSwipe("right");
+            handleStepChange();
+        } else if (touchDiff < -80  && currentStep < 3) {
+            handleSwipe("left");
+            handleStepChange();
+        }
+        setTouchStart(0);
+        setTouchEnd(0);
+
+        console.log(touchDiff);
+    }
 
     return (
         <>
@@ -48,7 +90,7 @@ export default function Destination() {
                             setInProp(false);
                         }, 500);
                     }}
-                        className={` hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${selectedButton === "Moon" ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
+                        className={` hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${currentStep === 0 ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
                         <button>Moon</button>
                     </div>
                     <div onClick={() => {
@@ -59,7 +101,7 @@ export default function Destination() {
                             setInProp(false);
                         }, 500);
                     }}
-                        className={`hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${selectedButton === "Mars" ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
+                        className={`hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${currentStep === 1 ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
                         <button>Mars</button>
                     </div>
                     <div onClick={() => {
@@ -70,7 +112,7 @@ export default function Destination() {
                             setInProp(false);
                         }, 500);
                     }}
-                        className={`hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${selectedButton === "Europa" ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
+                        className={`hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${currentStep === 2 ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
                         <button>Europa</button>
                     </div>
                     <div onClick={() => {
@@ -81,12 +123,14 @@ export default function Destination() {
                             setInProp(false);
                         }, 500);
                     }}
-                        className={`hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${selectedButton === "Titan" ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
+                        className={`hover:border-[#a19797] hover:border-b-2 cursor-pointer h-10 duration-500 ${currentStep === 3 ? 'hover:border-white border-white border-solid border-b-2 ' : 'border-white border-solid border-b-2 border-opacity-0'} `}>
                         <button >Titan</button>
 
                     </div>
                 </div>
-                <div>
+                <div onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleTouchEnd}>
                     <CSSTransition
                         in={inProp} // renderiza o componente atual
                         timeout={500} // tempo em milissegundos da duração da animação

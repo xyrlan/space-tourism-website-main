@@ -31,7 +31,6 @@ export default function Crew() {
 
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
-    const slideRef = useRef(null);
 
     function handleSwipe(direction:  any) {
         if (direction === "left" ) {
