@@ -8,7 +8,7 @@ export default function Vehicle() {
     return (
         <div className="md:inline-flex items-center md:ml-[5%] relative gap-20 max-lg:gap-5 max-md:justify-center max-md:flex max-md:flex-col max-md:p-4">
 
-            <Image className="max-xl:scale-90 md:hidden " src="/images/image-launch-vehicle-landscape.jpg" width={450} height={400} alt="vehicle" />
+            <Image className=" md:hidden " src="/images/image-launch-vehicle-landscape.jpg" width={450} height={400} alt="vehicle" />
 
             <div className="w-[35%] flex flex-col max-xl:scale-90 max-lg:[50%] max-lg:w-full max-md:w-full max-md:items-center">
                 <h1 className="text-2xl text-[#b3a8a8]">The terminology...</h1>

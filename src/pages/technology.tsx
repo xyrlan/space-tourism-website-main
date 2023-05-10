@@ -19,7 +19,7 @@ export default function Technology() {
         setSelectedButton(buttonValue);
     }
 
-    const MultiStepComponents = [<Vehicle key={currentStep}/>, <Capsule key={currentStep} />, <Spaceport key={currentStep} />]
+    const MultiStepComponents = [<Vehicle key={currentStep} />, <Capsule key={currentStep} />, <Spaceport key={currentStep} />]
 
     const [inProp, setInProp] = useState(false);
 
@@ -81,30 +81,21 @@ export default function Technology() {
                             onClick={() => {
                                 handleStepClick(0);
                                 setSelectedButton("vehicle");
-                                setInProp(true);
-                                setTimeout(() => {
-                                    setInProp(false);
-                                }, 500);
+                                handleStepChange();
                             }}> 1 </button>
                         <button
                             className={` duration-500 ${currentStep === 1 ? "h-20 w-20 rounded-full border-white border-solid border-2 bg-white text-black text-6xl" : "h-20 w-20 rounded-full border-white border-solid border-2 hover:bg-gray-600 bg-transparent text-6xl"}`}
                             onClick={() => {
                                 handleStepClick(1);
                                 setSelectedButton("capsule");
-                                setInProp(true);
-                                setTimeout(() => {
-                                    setInProp(false);
-                                }, 500);
+                                handleStepChange();
                             }}> 2 </button>
                         <button
                             className={` duration-500 ${currentStep === 2 ? "h-20 w-20 rounded-full border-white border-solid border-2 bg-white text-black text-6xl" : "h-20 w-20 rounded-full border-white border-solid border-2 hover:bg-gray-600 bg-transparent text-6xl"}`}
                             onClick={() => {
                                 handleStepClick(2);
                                 setSelectedButton("spaceport");
-                                setInProp(true);
-                                setTimeout(() => {
-                                    setInProp(false);
-                                }, 500);
+                                handleStepChange();
                             }}> 3 </button>
                     </ul>
                     <div onTouchStart={handleTouchStart}
