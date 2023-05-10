@@ -59,12 +59,12 @@ export default function Navbar() {
 
                 <Image className="sm:mx-10 sm:py-6 max-sm:h-fit max-sm:mx-4" src="/images/logo.svg" width={48} height={48} alt="Logo" />
 
-                <Image width={12} height={12} alt="menu-icon"
+                <Image width={50} height={12} alt="menu-icon"
                     onClick={() => {
                         setActive(!isActive ? true : false);
                         console.log(isActive);
                     }}
-                    className="h-12 sm:hidden block max-sm:mx-4" id="menu-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAIZJREFUSEvtlUEOgCAMBFn6MZ+mP9OHQQ3CRSXgYSMmthcOJDvJZAtwgwaDuM7Ar5k31YdqDWFOB8s7RJZrVlW1xkiDJiC8v3G+BWYpbuVYq3OrVSdqq4HNWl1fp6yaNgDWR6ppxEaQrVNep9+91eVbpHUMIumbPY2Vi6a3F2Sqe4Zo98NU71nrKh8hOW3MAAAAAElFTkSuQmCC" />
+                    className="sm:hidden block max-sm:mx-4" id="menu-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAIZJREFUSEvtlUEOgCAMBFn6MZ+mP9OHQQ3CRSXgYSMmthcOJDvJZAtwgwaDuM7Ar5k31YdqDWFOB8s7RJZrVlW1xkiDJiC8v3G+BWYpbuVYq3OrVSdqq4HNWl1fp6yaNgDWR6ppxEaQrVNep9+91eVbpHUMIumbPY2Vi6a3F2Sqe4Zo98NU71nrKh8hOW3MAAAAAElFTkSuQmCC" />
 
                 <div className="border border-solid border-gray-700 w-[33%] h-0 place-self-center absolute left-[10%] max-xl:w-[28%] max-lg:w-[24%] max-md:hidden" />
 
