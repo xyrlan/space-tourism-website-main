@@ -59,7 +59,7 @@ export default function Navbar() {
 
                 <Image className="sm:mx-10 sm:py-6 max-sm:h-fit max-sm:mx-4" src="/images/logo.svg" width={48} height={48} alt="Logo" />
 
-                <img
+                <Image width={12} height={12} alt="menu-icon"
                     onClick={() => {
                         setActive(!isActive ? true : false);
                         console.log(isActive);

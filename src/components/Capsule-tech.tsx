@@ -14,8 +14,8 @@ export default function Capsule() {
                 <h1 className="text-2xl text-[#b3a8a8]">The terminology...</h1>
                 <h5 className="text-7xl mb-[5%] max-md:text-5xl">Space capsule</h5>
                 <p className="text-lg text-[#b3a8a8] max-md:text-center">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
-                    capsule to reenter the Earth's atmosphere without wings. Our capsule is where
-                    you'll spend your time during the flight. It includes a space gym, cinema,
+                    capsule to reenter the Earth&rsquo;s atmosphere without wings. Our capsule is where
+                    you&rsquo;ll spend your time during the flight. It includes a space gym, cinema,
                     and plenty of other activities to keep you entertained.</p>
             </div>
             <div className="">

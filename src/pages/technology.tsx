@@ -19,7 +19,7 @@ export default function Technology() {
         setSelectedButton(buttonValue);
     }
 
-    const MultiStepComponents = [<Vehicle />, <Capsule />, <Spaceport />]
+    const MultiStepComponents = [<Vehicle key={currentStep}/>, <Capsule key={currentStep} />, <Spaceport key={currentStep} />]
 
     const [inProp, setInProp] = useState(false);
 

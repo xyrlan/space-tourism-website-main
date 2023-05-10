@@ -25,7 +25,7 @@ export default function Crew() {
         setSelectedButton(buttonValue);
     }
 
-    const MultiStepComponents = [<Commander />, <Specialist />, <Pilot />, <Engineer />]
+    const MultiStepComponents = [<Commander key={currentStep} />, <Specialist key={currentStep} />, <Pilot key={currentStep} />, <Engineer key={currentStep} />]
 
     const [inProp, setInProp] = useState(false);
 

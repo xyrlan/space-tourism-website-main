@@ -26,7 +26,7 @@ export default function Destination() {
         setSelectedButton(buttonValue);
     }
 
-    const MultiStepComponents = [<Moon />, <Mars />, <Europa />, <Titan />];
+    const MultiStepComponents = [<Moon key={currentStep} />, <Mars key={currentStep} />, <Europa key={currentStep} />, <Titan key={currentStep} />];
 
 
     const [inProp, setInProp] = useState(false); // para CSSTransition
